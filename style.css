@@ -1,0 +1,378 @@
+:root{
+    --Blue: hsl(246, 80%, 60%);
+
+    --red: hsl(15, 100%, 70%);
+    --softblue: hsl(195, 74%, 62%);
+    --Lightred: hsl(348, 100%, 68%);
+    --Limegreen: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Softorange: hsl(43, 84%, 65%);
+
+    --Verydarkblue: hsl(226, 43%, 10%);
+    --Darkblue: hsl(235, 46%, 20%);
+    --Desaturatedblue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+}
+
+
+
+body {
+    color: white;
+    background-color: black;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+
+  }
+
+#profilepic{             /* Name card part */
+    width: 60px;
+    border-style: solid;
+    border-color: white ;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right:20px;
+    object-fit: cover;
+    
+}
+
+
+
+
+
+
+
+.icon{
+    
+    position: absolute;
+    right:10px;
+    bottom:110px;
+        
+
+}
+
+
+.upper{
+    width: 300px;
+    height: 180px;
+    
+    border-radius: 15px;
+    margin-top: 20px;
+    position: relative; /* (parent div) To fix the position of a div and the icon*/
+    overflow: hidden; /* To make extended part of the icon invisible outside the div*/
+}
+.lower{
+    background-color: var(--Darkblue);
+    border-radius: 15px;
+    width:300px;
+    height:140px;
+    margin-top:auto;    
+    position: absolute;  /*  To fix the position of a div and the icon*/
+    bottom: 0px;
+}
+
+
+/* */
+.nameDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: auto;
+    margin-left: 0px;
+    font-weight: 300;
+}
+
+#namespan1{
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+#namespan2{
+    font-size: 20px;
+}
+
+
+.nameCardSmallerUpper{
+    width: 300px;
+    height: 120px;
+    background-color: var(--Blue);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.big-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.nameCardContainer{
+    width:300px;
+    height: 180px;
+    margin:auto;
+    margin-top: 80px;
+    background-color: var(--Darkblue);
+
+ 
+    border-radius: 15px;
+
+}
+
+.dayweekmonth{
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 24px;
+}
+
+
+
+.nameCardLowerWords:hover{
+    cursor: pointer;
+}
+
+.nameCardLowerWords:active{
+    color:white;
+}
+.nameCardLowerWords{
+    color: var(--PaleBlue);
+    background-color: var(--Darkblue);
+    border-style: none;
+
+}
+
+
+
+
+/* */
+.upperwork{
+    background-color:var(--red);
+    display: flex;
+}
+
+
+
+.upperplay{
+    background-color:var(--softblue);
+    display: flex;
+}
+
+
+
+.upperstudy{
+    background-color:var(--Lightred);
+    display: flex;
+}
+
+.upperexercise{
+    background-color:var(--Limegreen);
+    display: flex;
+}
+.uppersocial{
+    background-color:var(--Violet);
+    display: flex;
+}
+.upperselfcare{
+    background-color:var(--Softorange);
+    display: flex;
+}
+
+/* */
+
+
+.lower {
+    display: flex;
+    flex-direction: row;
+}
+
+.lower div {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.showhours span:nth-child(1){
+    font-size: 20px;
+}
+
+.showhours span:nth-child(2){
+    font-size: 30px;
+    
+}
+
+.showhours span{
+    margin:5px;
+}
+
+.leftbox span{
+    padding-top:25px;  /*  To make it parrarel*/
+    font-size:14px;
+    color: var(--Desaturatedblue);
+}
+
+
+
+@media screen and (min-width:769px) {
+    .big-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        row-gap: 15px;
+        column-gap: 20px;
+      
+    }
+
+
+    .nameCardContainer{
+        display: grid;
+
+        grid-column:1/span 1;
+        grid-row: 1/ span 2;
+        height: 520px;
+        margin: auto;
+    }
+
+    .upper{
+        display: grid;
+        height: 250px;
+
+    }
+
+    .lower{
+        height: 200px;
+    }
+
+    .nameCardSmallerUpper{
+        width: 300px;
+        height: 370px;
+        background-color: var(--Blue);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+    #namespan1{
+        font-size: 15px;
+        
+
+    }
+
+    #namespan2{
+        font-size: 45px;
+    }
+
+    #profilepic{             /* Name card part */
+        width: 80px;
+        border-style: solid;
+        border-color: white ;
+        border-radius: 50px;
+        margin-top: 30px;
+       
+        margin-left: 30px;
+        
+        object-fit: cover;
+        
+    }
+
+    .nameDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 0px;
+        margin-left: 30px;
+        font-weight: 300;
+    }
+
+    .dayweekmonth{
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: center;
+        padding-top: 0px;
+    }
+
+    .nameCardLowerWords{
+     
+        font-size: 18px;
+        padding-left: 30px;
+        margin-bottom: 15px;
+
+    
+    }
+
+    .showhours span:nth-child(1){
+        font-size: 22px;
+        font-weight: 400;
+
+        grid-column:1/span 1;
+        position: relative;
+        top:20px;
+        right:18px;
+
+        
+    }
+    
+    .showhours span:nth-child(2){
+        font-size: 50px;
+        grid-column:1/span 1;
+        grid-row: 2/span 1;
+        position: relative;
+        top: 30px;
+        left:10px;
+
+        
+    }
+
+    .lower {
+        display: grid;
+        grid-template-columns: 7fr fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+    
+   
+
+    .doticon{
+        position: relative;
+        left:160px;
+        bottom:80px;
+    
+    }
+
+   #previouswork{
+    grid-column:1/span 1;
+    grid-row: 3/span 1;
+   }
+
+  
+   .icon{
+    
+    position: absolute;
+    right:10px;
+    bottom:180px;
+        
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+   .attribution { font-size: 11px; text-align: center; }
+   .attribution a { color: hsl(228, 45%, 44%); }

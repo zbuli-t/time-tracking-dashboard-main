@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  
+</head>
+<body>
+  <div class="big-container">
+      <div class="nameCardContainer">
+            
+            <div class="nameCardSmallerUpper">
+                  <img id="profilepic" src="images/image-jeremy.png" alt="jeremy">
+                  <div class="nameDiv">
+                        <span id="namespan1">Report for</span>
+                        <span id="namespan2">Jeremy Robson</span>
+                  </div>
+                  
+            </div>
+            <div class="dayweekmonth">
+                  <button id="daily" class="nameCardLowerWords">Daily</button>
+                  <button id="weekly" class="nameCardLowerWords">Weekly</button>
+                  <button id="monthly" class="nameCardLowerWords">Monthly</button>
+            </div>
+            
+      </div>
+
+      <div class="upper upperwork">
+            <img class="icon" src="images/icon-work.svg" alt="workicon">
+            <div class="lower work">
+                  <div class="showhours">
+                        <span>Work</span>
+                        <span id="workhours">32hrs</span>
+                  </div>
+                  <div class="leftbox">
+                        <img class="doticon" src="images/icon-ellipsis.svg" alt="doticon">
+                        <span id="previouswork">Last Week - 36hrs </span>
+                  </div>
+            </div>
+       </div>
+
+      <div class="upper upperplay">
+            <img class="icon" src="images/icon-play.svg" alt="playicon">
+            <div class="lower play">
+                  <div class="showhours">
+                        <span>Play</span>
+                        <span id="playhours">10hrs</span>
+                  </div>
+                  <div class="leftbox">
+                        <img class="doticon" src="images/icon-ellipsis.svg" alt="doticon">
+                        <span id="previousplay">Last Week - 8hrs </span>
+                  </div>
+            </div>
+      </div>
+
+      <div class="upper upperstudy">
+            <img class="icon" src="images/icon-study.svg" alt="studyicon">
+            <div class="lower study">
+                  <div class="showhours">
+                        <span>Study</span>
+                        <span id="studyhours">32hrs</span>
+                  </div>
+                  <div class="leftbox">
+                        <img class="doticon" src="images/icon-ellipsis.svg" alt="doticon">
+                        <span id="previousstudy">Last Week - 4hrs </span>
+                  </div>
+            </div>
+      </div>
+
+      <div class="upper upperexercise">
+            <img class="icon" src="images/icon-exercise.svg" alt="exerciseicon">
+            <div class="lower exercise">
+                  <div class="showhours">
+                        <span>Exercise</span>
+                        <span id="exercisehours">4hrs</span>
+                  </div>
+                  <div class="leftbox">
+                        <img class="doticon" src="images/icon-ellipsis.svg" alt="doticon">
+                        <span id="previousexercise">Last Week - 5hrs </span>
+                  </div>
+            </div>
+      </div>
+
+      <div class="upper uppersocial">
+            <img class="icon" src="images/icon-social.svg" alt="socialicon">
+            <div class="lower social">
+                  <div class="showhours">
+                        <span>Social</span>
+                        <span id="socialhours">5hrs</span>
+                  </div>
+                  <div class="leftbox">
+                        <img class="doticon" src="images/icon-ellipsis.svg" alt="doticon">
+                        <span id="previoussocial">Last Week - 10hrs </span>
+                  </div>
+            </div>
+      </div>
+
+      <div class="upper upperselfcare">
+            <img class="icon" src="images/icon-self-care.svg" alt="self-careicon">
+            <div class="lower selfcare">
+                  <div class="showhours">
+                        <span>Self Care</span>
+                        <span id="selfcarehours">2hrs</span>
+                  </div>
+                  <div class="leftbox">
+                        <img class="doticon" src="images/icon-ellipsis.svg" alt="doticon">
+                        <span id="previousselfcare">Last Week - 2hrs </span>
+                  </div>
+            </div>
+      </div>
+
+    
+     
+
+
+
+
+  </div>
+  
+
+ 
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">J.T.</a>.
+  </div>
+
+  <script type="module" src="getData.js"></script>
+</body>
+</html>
